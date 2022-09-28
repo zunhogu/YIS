@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#5383E8">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:id="@+id/logout_btn"
+            android:text="로그아웃"
+            android:background="#ffffff"
+            android:textColor="#000000"
+            android:textSize="15dp"
+
+            />
+
+        <TextView
+            android:id="@+id/lis_title"
+            android:layout_width="150dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/login_font"
+            android:text="LIS"
+            android:textColor="@color/white"
+            android:textSize="100dp"
+            android:transitionName="titleTransition" />
+
+        <TextView
+            android:id="@+id/home_cotent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="LIS(League of legend Information System)는 현재 한국에서 가장 인기 있는 온라인게임인 리그오브레전드에 대한 정보를 사용자에게 전달하고, 사용자들끼리 정보를 공유할 수 있는 앱 프로젝트다. LIS가 목표로 하고 있는 사용자는 리그오브레전드를 즐겨 하는 유저나, 승률을 높이고 싶어 하는 유저를 타깃으로 하고 있다. 유저들에게 리그오브레전드에 대한 전반적인 정보를 제공하고, 소통의 공간을 제공하여 유저들은 더욱더 즐겁게 게임을 할 수 있을 것이다."
+            android:textSize="15dp"
+            android:fontFamily="@font/home_font"
+            android:layout_margin="10dp"
+            android:textStyle="bold"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="10dp">
+
+                <Button
+                    android:id="@+id/home_serach_btn"
+                    android:layout_width="190dp"
+                    android:layout_height="190dp"
+                    android:background="@drawable/home_button"
+                    android:layout_marginRight="5dp"
+                    android:text="유저 전적검색"
+                    android:fontFamily="@font/home_font"
+                    android:textSize="25dp"
+                    android:textColor="@color/black"/>
+
+                <Button
+                    android:id="@+id/home_champinfo_btn"
+                    android:layout_width="190dp"
+                    android:layout_height="190dp"
+                    android:background="@drawable/home_button"
+                    android:layout_marginLeft="5dp"
+                    android:text="챔피언 정보"
+                    android:fontFamily="@font/home_font"
+                    android:textSize="25dp"
+                    android:textColor="@color/black"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="10dp">
+
+                <Button
+                    android:id="@+id/home_ranking_btn"
+                    android:layout_width="190dp"
+                    android:layout_height="190dp"
+                    android:background="@drawable/home_button"
+                    android:layout_marginRight="5dp"
+                    android:text="유저 랭킹조회"
+                    android:fontFamily="@font/home_font"
+                    android:textSize="25dp"
+                    android:textColor="@color/black"/>
+
+                <Button
+                    android:id="@+id/home_community_btn"
+                    android:layout_width="190dp"
+                    android:layout_height="190dp"
+                    android:background="@drawable/home_button"
+                    android:layout_marginLeft="5dp"
+                    android:text="게시판"
+                    android:fontFamily="@font/home_font"
+                    android:textSize="25dp"
+                    android:textColor="@color/black"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

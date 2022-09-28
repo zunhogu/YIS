@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f0f0f0">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="챔피언 정보"
+            android:textSize="50dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/black"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="60dp">
+            <Button
+                android:id="@+id/champinfo_add_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="등록하기" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/champinfo_top_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="탑"
+            android:textColor="@color/black"
+            android:background="@drawable/champinfo_button"/>
+        <Button
+            android:id="@+id/champinfo_junggle_btn"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:text="정글"
+            android:textColor="@color/black"
+            android:background="@drawable/champinfo_button"/>
+        <Button
+            android:id="@+id/champinfo_mid_btn"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:text="미드"
+            android:textColor="@color/black"
+            android:background="@drawable/champinfo_button"/>
+        <Button
+            android:id="@+id/champinfo_ad_btn"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:text="원딜"
+            android:textColor="@color/black"
+            android:background="@drawable/champinfo_button"/>
+        <Button
+            android:id="@+id/champinfo_support_btn"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:text="서폿"
+            android:textColor="@color/black"
+            android:background="@drawable/champinfo_button"/>
+    </LinearLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ListView
+            android:id="@+id/champinfo_top_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <ListView
+            android:id="@+id/champinfo_junggle_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <ListView
+            android:id="@+id/champinfo_mid_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <ListView
+            android:id="@+id/champinfo_ad_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <ListView
+            android:id="@+id/champinfo_support_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </FrameLayout>
+
+</LinearLayout>
